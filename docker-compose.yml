@@ -1,0 +1,15 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2025-latest
+    container_name: blackcat-db
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Blackcat@123456
+      - MSSQL_PID=Developer
+    ports:
+      - "14331:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+
+volumes:
+  mssql_data:

@@ -1,0 +1,18 @@
+# --- Dành cho Backend (Kotlin/Gradle) ---
+backend/.gradle/
+backend/build/
+backend/out/
+backend/.idea/
+*.iml
+
+# --- Dành cho Frontend (Node/Vite) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# --- Dành cho Hệ điều hành & IDE ---
+.DS_Store
+.vscode/
+*.log
+
+# --- Tệp cấu hình bảo mật ---

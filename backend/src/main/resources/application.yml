@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: "blackcat-text"
+  datasource:
+    url: "jdbc:sqlserver://localhost:14331;databaseName=BlackcatDB;encrypt=true;trustServerCertificate=true;"
+    username: "testuser"
+    password: "Abc12345"
+    driver-class-name: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+  jpa:
+    hibernate:
+      ddl-auto: "update"
+    show-sql: true
